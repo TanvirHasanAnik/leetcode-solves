@@ -1,4 +1,4 @@
- class TreeNode {
+ export class TreeNode {
     val: number
     left: TreeNode | null
     right: TreeNode | null
@@ -11,7 +11,7 @@
 
 
 
-function buildTreeBFS(arr: (number | null)[]): TreeNode | null {
+export function buildTreeBFS(arr: (number | null)[]): TreeNode | null {
   if (arr.length === 0 || arr[0] === null) return null;
 
   const root = new TreeNode(arr[0]);
@@ -37,5 +37,3 @@ function buildTreeBFS(arr: (number | null)[]): TreeNode | null {
 
   return root;
 }
-
-module.exports = { buildTreeBFS };
